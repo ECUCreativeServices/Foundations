@@ -1,0 +1,58 @@
+.tool-tip
+  font-family: $sans
+  position: relative
+  font-size: 18px
+  width: 100%
+  &:before
+    position: absolute
+    z-index: 2
+    display: none
+    padding: 5px
+    line-height: 1.4
+    border-radius: 3px
+    background-color: $white
+    color: $black
+    content: attr(title)
+    display: inline-block
+  &:after
+    position: absolute
+    z-index: 1
+    display: none
+    width: 0
+    height: 0
+    border: 5px solid transparent
+    content: ""
+    display: inline-block
+.top
+  &:before
+    bottom: calc(100% + 5px)
+    left: 50%
+    transform: translateX(-50%)
+  &:after
+    bottom: 100%
+    left: 50%
+    transform: translateX(-50%)
+    border-bottom-width: 0
+    border-top-color: $white
+#tool-tip-1
+  &:before,
+  &:after
+    margin-bottom: -176px
+#tool-tip-2
+  &:before,
+  &:after
+    margin-bottom: -121px
+#tool-tip-3
+  &:before,
+  &:after
+    margin-bottom: -66px
+#tool-tip-6
+  &:before,
+  &:after
+    margin-bottom: -30px
+#tool-tip-5
+  &:before,
+  &:after
+    margin-bottom: -40px
+    @media (min-width: 992px)
+      margin-bottom: 0

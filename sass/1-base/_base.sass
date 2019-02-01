@@ -1,0 +1,132 @@
+/* BASE STYLES */
+
+a
+  text-decoration: none
+
+.fixed
+  position: fixed
+  top: 0
+  height: 70px
+  z-index: 1
+  
+body
+  color: #fff
+
+section
+  min-height: 600px
+
+.masthead
+  background: url("../images/herobg.jpg") #C29419  no-repeat fixed center
+  height: 100vh
+  min-height: 800px
+
+.btn-ecu
+  margin-bottom: 30px
+  width: 50%
+  text-transform: uppercase
+  color: $ecu-purple
+  background-color: $ecu-gold
+  &:hover
+    background-color: $ecu-gold-burnt
+    color: $white
+
+#screen1
+  background: $ecu-purple
+  min-height: 700px
+  height: 100vh
+
+#screen2
+  background: $white
+  height: 100%
+
+#screen3
+  background: $ecu-grey
+  height: 100%
+
+#screen4
+  background: $ecu-purple-lightest
+  height: 100%
+
+#screen5
+  background: $ecu-purple url("../images/bg3.png")  no-repeat fixed center
+  height: 100%
+  width: 100%
+
+#screen6
+  background: $white
+  height: 100%
+
+#screen7
+  background: $white
+  height: 100%
+
+#screen8
+  background: $ecu-grey
+  height: 100%
+
+#screen9
+  background: $white
+  height: 100%
+
+#screen10
+  background: $ecu-purple-lightest
+  height: 100%
+
+#screen11
+  height: 100%
+
+#screen12
+  background: $white
+  height: 100%
+
+.height100
+  padding-bottom: 60px
+
+
+#cupola
+  padding: 0
+  background: $ecu-yellow-grey
+  @media (min-width: $bp)
+    background: $ecu-yellow-grey url("../images/cupola.png") no-repeat top center
+    background-size: fixed 100%
+
+#chancellor
+  padding: 0
+  background: $ecu-yellow-grey
+  @media (min-width: $bp)
+    background: $ecu-yellow-grey url("../images/chancellor.png") no-repeat top center
+    background-size: fixed 100%
+
+#jenkins
+  padding: 0
+  background: $ecu-yellow-grey
+  @media (min-width: $bp)
+    background: $ecu-yellow-grey url("../images/jenkins.png") no-repeat top center
+    background-size: fixed 100%
+    padding-bottom: 3em
+
+#doubloon
+  padding: 0
+  background: $ecu-yellow-grey
+  @media (min-width: $bp)
+    background: $ecu-yellow-grey url("../images/doubloon.png") no-repeat top center
+    background-size: fixed 100%
+    padding-bottom: 3em
+
+.tx-right,
+.tx-left
+  text-align: center
+  height: auto
+  margin: 2em 2em 0
+  @media (min-width: $bp)
+    width: 400px
+    margin: 4em 4em 0
+    top: auto
+    bottom: 0
+    text-align: left
+  button
+    color: white
+    background: transparentize($ecu-gold, 0.95)
+    border: 1px solid $ecu-gold
+  h4
+    color: $ecu-gold

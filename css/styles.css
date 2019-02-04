@@ -131,7 +131,8 @@ table {
           display: table-header-group; } }
       .table table thead th {
         padding: 1em 0;
-        border-bottom: none; }
+        border-bottom: none;
+        text-align: center; }
     .table table tbody {
       color: #000000;
       line-height: 40px; }
@@ -176,6 +177,15 @@ table {
           @media (min-width: 768px) {
             .table table tbody tr td:before {
               display: none; } }
+      .table table tbody .digit {
+        text-align: left; }
+        @media (min-width: 768px) {
+          .table table tbody .digit {
+            text-align: right; } }
+      .table table tbody .last::after {
+        display: inline-block;
+        content: " ";
+        padding-left: 1em; }
 
 /* BAR GRAPHS */
 .bargraph {

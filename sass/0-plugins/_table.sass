@@ -60,6 +60,7 @@ table
       th
         padding: 1em 0
         border-bottom: none
+        text-align: center
     tbody
       color: $black
       line-height: 40px
@@ -101,3 +102,12 @@ table
             display: inline-block
             @media (min-width: $bp)
               display: none
+      .digit
+        text-align: left
+        @media (min-width: $bp)
+          text-align: right
+      .last
+        &::after
+          display: inline-block
+          content: " "
+          padding-left: 1em
